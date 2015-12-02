@@ -29,7 +29,7 @@ public class Controller {
     @ResponseBody
     public HttpEntity<String> getResource() {
         String hello = "hello world!";
-        log.error(hello);
+        log.info(hello);
         return new ResponseEntity<>(hello, HttpStatus.OK);
     }
 
